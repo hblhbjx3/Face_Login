@@ -59,8 +59,10 @@
 *	准备好数据后，打开Facedata_create.py文件，修改，sql_path，运行Python Facedata_create.py，进行数据库的创建，记得修改数据库名字，防止重名冲突；
 *	打开num.txt将数字改为0，打开Face_Login_UI.py文件 修改__main__内的sql_path，与上一步骤一样的路径名字；
 *	在修改好所有数据后即可使用自己的人脸数据库进行人脸登陆；
+
 *	__!!! 注 !!!__：如果初次打开界面，提示‘数据有增减,请检查数据库’之类的提示，则代表数据库(.db文件)与数据列表(.csv文件)内容不匹配，在录入人后记得讲getpics内的人脸数据转移至facedata并修改csv表格数据；
 
+---
 __PS__:修改文件\数据后记得保存，保存！！！
 
 access_token过期请到百度自行申请新的access_token[方法链接](https://ai.baidu.com/ai-doc/FACE/yk37c1u4t)
