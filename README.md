@@ -46,7 +46,24 @@
 ---
 # 使用方法
 测试运行(数据库为测试使用)：
+
+### 初次运行
 替换facedata中的173020001.jpg为自己照片
+
 修改facedata.csv中第一行名字与性别
 
-###
+修改后直接运行“Face_Login_UI.py”，即可开始使用
+
+### 自己人脸数据使用方法
+*	数据准备：facedata导入人脸数据照片，以‘学号’命名，格式JPEG，csv存入相应的学号、姓名、性别，注意：facedata内的照片一定要与csv表格一一对应才能完成数据库的建立；
+*	准备好数据后，打开Facedata_create.py文件，修改，sql_path，运行Python Facedata_create.py，进行数据库的创建，记得修改数据库名字，防止重名冲突；
+*	打开num.txt将数字改为0，打开Face_Login_UI.py文件 修改__main__内的sql_path，与上一步骤一样的路径名字；
+*	在修改好所有数据后即可使用自己的人脸数据库进行人脸登陆；
+*	__!!! 注 !!!__：如果初次打开界面，提示‘数据有增减,请检查数据库’之类的提示，则代表数据库(.db文件)与数据列表(.csv文件)内容不匹配，在录入人后记得讲getpics内的人脸数据转移至facedata并修改csv表格数据；
+
+__PS__:修改文件\数据后记得保存，保存！！！
+
+access_token过期请到百度自行申请新的access_token[方法链接](https://ai.baidu.com/ai-doc/FACE/yk37c1u4t)
+
+申请后修改Face_Live.py中的access_token值
+
