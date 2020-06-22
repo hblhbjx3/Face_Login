@@ -69,3 +69,20 @@ access_token过期请到百度自行申请新的access_token[方法链接](https
 
 申请后修改Face_Live.py中的access_token值
 
+
+---
+## 文件夹介绍
+*	__face_log__文件夹为人脸登陆图片记录文件夹，以记录时间分类，图片以学号+记录具体时间命名；
+* __facedata__文件夹为人脸图片数据库文件夹，以人脸学号命名，格式为‘JPEG(后缀.jpg)’；
+* __getpics__文件夹为获取图片文件夹，保存临时图片与摄像头录入文件夹，temp.jpg为临时图片，xxx(id).jpg为录入时保存的人脸图片；
+* __image__文件夹为系统界面图库，里面图片不建议修改！；
+### 文件功能介绍
+* __Face_Detect.py__包含摄像头录入、检测，图片录入，摄像头释放功能；
+* __Face_Live.py__包含图片数据处理，活体检测功能；
+* __Facedata_create.py__数据库创建功能；
+* __Facedata_load.py__数据加载功能；
+* __Face_Login_UI.py__整体界面，按钮功能函数；
+* __facedata.csv__数据表格用于导入数据库使用；(主要是方便用户操作)
+* __FaceData_0.db__初始数据库，保存人脸数据；
+* __Login_log.txt__登陆日志，记录登陆成功/失败信息；
+* __num.txt__判断是否为初次运行程序(0/1)，初始为0；
